@@ -1,0 +1,118 @@
+{
+  "Rooms": [
+    {
+      "id": 1,
+      "description": "You are at the entrance of a dungeon, go in and get the ancient item and escape fast!",
+      "Connections": [
+        {
+          "South": 2
+        }
+      ],
+      "itemsinRoom": [],
+      "winningItemId": 4,
+      "winningMessage": "You got the ancient item! Now lets get out of here before the dungeon falls apart!"
+    },
+    {
+      "id": 2,
+      "description": "You've entered a room with a decision to go left or right.",
+      "Connections": [
+        {
+          "North": 1,
+          "East": 3,
+          "West": 4
+        }
+      ],
+      "itemsinRoom": []
+    },
+    {
+      "id": 3,
+      "description": "There's an opening in the ceiling of this room. It's night time outside.",
+      "Connections": [
+        {
+          "West": 2,
+          "South": 5
+        }
+      ],
+      "itemsinRoom": [
+        {
+          "id": 1
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "description": "There is absolutely nothing in this room.",
+      "Connections": [
+        {
+          "East": 2,
+          "South": 6
+        }
+      ],
+      "itemsinRoom": []
+    },
+    {
+      "id": 5,
+      "description": "There are layers of bones laid across the floor in this room.",
+      "Connections": [
+        {
+          "North": 3,
+          "West": 1
+        }
+      ],
+      "itemsinRoom": [
+        {
+          "id": 2
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "description": "A beautiful garden of flowers fills this room from the ground up. There are 3 different paths, which is the right one?",
+      "Connections": [
+        {
+          "North": 4,
+          "East": 7,
+          "South": 1,
+          "West": 1
+        }
+      ],
+      "itemsinRoom": [
+        {
+          "id": 3
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "description": "A beautiful garden of flowers fills this room from the ground up. Light is shining from the eastern exit.",
+      "Connections": [
+        {
+          "West": 6
+        }
+      ],
+      "itemsinRoom": [
+        {
+          "id": 4
+        }
+      ]
+    }
+  ],
+  "Items": [
+    {
+      "id": 1,
+      "name": "Moon Stone"
+    },
+    {
+      "id": 2,
+      "name": "Bones"
+    },
+    {
+      "id": 3,
+      "name": "Sun Tablet"
+    },
+    {
+      "id": 4,
+      "name": "Ancient Totem"
+    }
+  ]
+}

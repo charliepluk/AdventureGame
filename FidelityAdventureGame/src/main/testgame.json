@@ -1,0 +1,90 @@
+{
+  "Rooms": [
+    {
+      "id": 1,
+      "description": "This room is damp and scary",
+      "Connections": [
+        {
+          "South": 2
+        }
+      ],
+      "itemsinRoom": [
+        {
+          "id": 1
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "description": "You had to jump down from the previous room, looks like there's no way back up. There's also a strange smell in this room",
+      "Connections": [
+        {
+          "South": 5,
+          "East": 3
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "description": "The floor is a bit slimy here, ugh.",
+      "Connections": [
+        {
+          "South": 4,
+          "West": 2
+        }
+      ],
+      "itemsinRoom": [
+        {
+          "id": 2
+        },
+        {
+          "id": 3
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "description": "It's fairly dark here, I need to strain to see anything.",
+      "Connections": [
+        {
+          "North": 3
+        }
+      ],
+      "itemsinRoom": [
+        {
+          "id": 4
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "description": "There's a pedestal here, looks like a round object would fit in here",
+      "Connections": [
+        {
+          "North": 2
+        }
+      ],
+      "itemsinRoom": [],
+      "winningItemId": 4,
+      "winningMessage": "You place the orb on the pedestal. There's a deep rumbling, feels like an earthquake... Suddenly, sunlight appears as a panel in the wall opens. Congratulations, you've escaped!"
+    }
+  ],
+  "Items": [
+    {
+      "id": 1,
+      "name": "candlestick"
+    },
+    {
+      "id": 2,
+      "name": "table"
+    },
+    {
+      "id": 3,
+      "name": "glass"
+    },
+    {
+      "id": 4,
+      "name": "Magic Orb"
+    }
+  ]
+}
